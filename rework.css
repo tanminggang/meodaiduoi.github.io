@@ -1,0 +1,149 @@
+/*font*/
+.center_text {
+	position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+	top: 30%;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+	color:white;
+	z-index: 1;
+}
+
+h1{
+	font-family: 'Major Mono Display', monospace;
+}
+
+p {
+	font-family: 'Montserrat', sans-serif;
+}
+
+a:link, a:visited {
+	font-family: 'Montserrat', sans-serif;
+	color:white;
+}
+
+a:hover {
+	font-family: 'Montserrat', sans-serif;
+	color:lightgray;
+}
+
+.font-mons{
+	font-family: 'Montserrat', sans-serif;
+}
+.font-majo{
+	font-family: 'Major Mono Display', monospace;
+}
+
+/*carousel*/
+.carousel-item {
+  	height: 100vh;
+  	min-height: 350px;
+  	background: no-repeat center center scroll;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+
+}
+.carousel-inner, .carousel, .slide {
+	z-index: -1;
+	position: fixed;
+}
+.carousel-indicators{
+	z-index: 1;
+}
+
+.carousel-fade .carousel-item {
+ 	opacity: 0;
+ 	transition-duration: .6s;
+ 	transition-property: opacity;
+}
+
+.carousel-fade  .carousel-item.active,
+.carousel-fade  .carousel-item-next.carousel-item-left,
+.carousel-fade  .carousel-item-prev.carousel-item-right {
+  	opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade  .active.carousel-item-right {
+ 	opacity: 0;
+}
+
+.carousel-fade  .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade  .active.carousel-item-prev {
+	transform: translateX(0);
+ 	transform: translate3d(0, 0, 0);
+}
+
+/*background*/
+.overlay {
+	position: fixed;
+	min-height: 100%;
+	min-width: 100%;
+	z-index: 0;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#16f5c4+0,ff00e0+100&0.7+0,0.9+100 */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+background-image: background: -webkit-linear-gradient(top left, rgba(22,245,196,0.7) 0%, rgba(255,0,224,0.9) 100%);
+background-image: background: -o-linear-gradient(top left, rgba(22,245,196,0.7) 0%, rgba(255,0,224,0.9) 100%);
+background-image: background: linear-gradient(to bottom right, rgba(22,245,196,0.7) 0%, rgba(255,0,224,0.9) 100%);
+background: -o-linear-gradient(top left, rgba(22,245,196,0.7) 0%, rgba(255,0,224,0.9) 100%);
+background: linear-gradient(to bottom right, rgba(22,245,196,0.7) 0%, rgba(255,0,224,0.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b316f5c4', endColorstr='#e6ff00e0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+/*Button*/
+.btn {
+	color: white;
+	border: none;
+  	border-radius: 50px;
+	background-color: #56A8E3;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+.navbar-dark .nav-item.dark .nav-dark,
+.navbar-dark .nav-item:focus .nav-dark,
+.navbar-dark .nav-item:hover .nav-dark {
+		opacity: 100%;
+        color: white;
+		z-index: 2;
+}
+
+/*resonsive for smaller device*/
+@media screen and (max-width: 575px) {
+	/*navbar*/
+	.bg-custom {
+		background-color: #B849E3;
+		z-index: 2;
+	}
+	.navbar-toggler {
+		width: 100%;
+    	float: none;
+    	min-width: 100%;
+		border: none;
+  	}
+	.nav-item {
+		text-align: center;
+		z-index: 2;
+	}
+	/*font*/
+	h1 {
+		font-size: 48px;
+	}
+	p {
+		font-size: medium;
+	}
+	a {
+		font-size: medium;
+	}
+}
+
